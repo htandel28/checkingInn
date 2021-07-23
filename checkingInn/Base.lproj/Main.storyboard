@@ -778,7 +778,7 @@ Short naps are also good if you are often tired!</string>
             <objects>
                 <viewController id="I19-6C-5ml" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daR-0u-OQF">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="pe8-AK-KMX">
@@ -825,7 +825,7 @@ Short naps are also good if you are often tired!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4A-nj-gP1">
-                                <rect key="frame" x="308" y="725" width="56" height="39"/>
+                                <rect key="frame" x="318" y="684" width="56" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="NEXT"/>
@@ -833,10 +833,19 @@ Short naps are also good if you are often tired!</string>
                                     <segue destination="qjx-3D-sor" kind="show" id="bcd-AA-R3i"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxc-fU-F7B">
+                                <rect key="frame" x="130" y="726" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to the Hotel"/>
+                                <connections>
+                                    <segue destination="BK7-vN-Kd3" kind="showDetail" id="kyO-c5-QgE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kVK-Kf-Vee"/>
                         <color key="backgroundColor" red="0.93279433250427246" green="0.91042345762252808" blue="0.68334382772445679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="i6q-HD-ZeH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfq-i5-28l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1068,6 +1077,7 @@ Short naps are also good if you are often tired!</string>
                                 <state key="normal" title="Button" image="50-500914_neutral-emoji-png-transparent-background-neutral-emoji-png"/>
                                 <connections>
                                     <action selector="yellowSmileButton:" destination="6FX-0T-rOK" eventType="touchUpInside" id="m2j-YH-y2n"/>
+                                    <segue destination="I19-6C-5ml" kind="show" id="0MT-6k-fbe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qly-wY-z9v">
@@ -1293,10 +1303,10 @@ Short naps are also good if you are often tired!</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LrA-rd-f1x"/>
-        <segue reference="6XP-BI-i5F"/>
+        <segue reference="rPX-u6-Isr"/>
         <segue reference="LaR-7U-ewh"/>
-        <segue reference="7Oh-Gy-YIq"/>
-        <segue reference="agx-v0-7Dd"/>
+        <segue reference="bcd-AA-R3i"/>
+        <segue reference="kyO-c5-QgE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2808A82B-9F2B-41BB-9FD2-8CCD404EAD49" width="1949" height="3464"/>
