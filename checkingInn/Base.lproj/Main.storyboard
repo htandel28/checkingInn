@@ -255,7 +255,7 @@
             <objects>
                 <viewController id="Nhm-tL-viW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kiU-i3-db6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zah-qt-iVC">
@@ -281,15 +281,56 @@
                                 <rect key="frame" x="75" y="0.0" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4a-4p-3HB">
+                                <rect key="frame" x="75" y="527" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“Write it on your heart that everyday is the best day in the year”                                                                               
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="19" name="Rockwell-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- Ralph Waldo Emerson" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-t7-y3i">
+                                <rect key="frame" x="75" y="628" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4I2-TU-wGT">
+                                <rect key="frame" x="38" y="123" width="315" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="That’s great! Treat yourself for getting through the day. Sometimes life can be hard and you should reward yourself! ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="28" name="Rockwell-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti5" translatesAutoresizingMaskIntoConstraints="NO" id="IyX-jn-Gxl">
+                                <rect key="frame" x="-105" y="360" width="407" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BUT-c7-lCP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.85393309593200684" green="0.93037444353103638" blue="0.70507574081420898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="S3k-S3-0B0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6s-d9-kuy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-629"/>
+            <point key="canvasLocation" x="780" y="-629.14691943127957"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BpX-mn-fOb">
@@ -334,7 +375,7 @@
             <objects>
                 <viewController id="GhB-pG-pZ9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3hz-Th-gJQ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlN-id-Uo8">
@@ -360,15 +401,50 @@
                                 <rect key="frame" x="75" y="-33" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H63-aH-GRq">
+                                <rect key="frame" x="75" y="589" width="242" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“You can’t focus on what’s going wrong. There’s always a way to turn things around.”
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="19" name="Rockwell-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neutral" translatesAutoresizingMaskIntoConstraints="NO" id="ywZ-Q3-bSI">
+                                <rect key="frame" x="110" y="421" width="186" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xrc-a0-VqL">
+                                <rect key="frame" x="32" y="111" width="327" height="433"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">That is okay! Try to do something today that makes you happy, whether it is reading a book, talking to a friend, etc. It is perfectly normal to have bad days, but there is no reason why you shouldn't try to make it a good one!</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="24" name="Rockwell-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cxc-DI-Lb7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94922226667404175" green="0.92653697729110718" blue="0.79402166604995728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="REs-gK-J70"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iud-H4-SXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="-609"/>
+            <point key="canvasLocation" x="2220" y="-609.24170616113736"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DDg-ph-tAu">
@@ -414,6 +490,7 @@
                                 <state key="normal" title="Button" image="8-89924_download-new-emoji-icons-in-png-ios-10.png"/>
                                 <connections>
                                     <action selector="greenSmileButton:" destination="6FX-0T-rOK" eventType="touchUpInside" id="14r-aQ-T9G"/>
+                                    <segue destination="Nhm-tL-viW" kind="show" id="nf9-zO-ugr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKO-dW-FV2">
@@ -422,6 +499,7 @@
                                 <state key="normal" title="Button" image="50-500914_neutral-emoji-png-transparent-background-neutral-emoji-png"/>
                                 <connections>
                                     <action selector="yellowSmileButton:" destination="6FX-0T-rOK" eventType="touchUpInside" id="yjg-w0-pIK"/>
+                                    <segue destination="GhB-pG-pZ9" kind="show" id="bdU-ux-H30"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XY-DS-U61">
@@ -486,7 +564,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="rY2-Bh-K26"/>
-        <segue reference="Y3m-XT-KVE"/>
+        <segue reference="abN-6o-6dN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2808A82B-9F2B-41BB-9FD2-8CCD404EAD49" width="1949" height="3464"/>
@@ -497,7 +575,12 @@
         <image name="Image-1" width="572" height="595"/>
         <image name="Image-2" width="339" height="392"/>
         <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
+        <image name="confetti5" width="1300" height="1140"/>
         <image name="hotel-building-clipart-png-hotel-clipart-png-transparent" width="860" height="710"/>
+        <image name="neutral" width="1920" height="1920"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
