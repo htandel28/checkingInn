@@ -925,7 +925,7 @@ Short naps are also good if you are often tired!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l0m-nd-uqG">
-                                <rect key="frame" x="75" y="156" width="240" height="501"/>
+                                <rect key="frame" x="75" y="142" width="240" height="535"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <attributedString key="attributedText">
@@ -957,6 +957,15 @@ Short naps are also good if you are often tired!</string>
                                 <state key="normal" title="Return to the Hotel"/>
                                 <connections>
                                     <segue destination="BK7-vN-Kd3" kind="show" id="agx-v0-7Dd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8b-5P-wOC">
+                                <rect key="frame" x="243" y="664" width="124" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Restart Survey"/>
+                                <connections>
+                                    <segue destination="7ht-q1-tOj" kind="show" id="LrA-rd-f1x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1283,11 +1292,11 @@ Short naps are also good if you are often tired!</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="R4J-je-Hvu"/>
+        <segue reference="LrA-rd-f1x"/>
         <segue reference="6XP-BI-i5F"/>
         <segue reference="LaR-7U-ewh"/>
         <segue reference="7Oh-Gy-YIq"/>
-        <segue reference="8qf-W8-sPd"/>
+        <segue reference="agx-v0-7Dd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2808A82B-9F2B-41BB-9FD2-8CCD404EAD49" width="1949" height="3464"/>
