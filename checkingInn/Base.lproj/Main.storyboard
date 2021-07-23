@@ -255,7 +255,7 @@
             <objects>
                 <viewController id="Nhm-tL-viW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kiU-i3-db6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zah-qt-iVC">
@@ -278,7 +278,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gOC-ih-PYe">
-                                <rect key="frame" x="75" y="-33" width="240" height="128"/>
+                                <rect key="frame" x="75" y="0.0" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -296,7 +296,7 @@
             <objects>
                 <viewController id="tQu-s7-lhp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zCd-63-bE9">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWR-qp-HDF">
@@ -306,9 +306,6 @@
                                 <state key="normal" title="Back" image="arrowshape.turn.up.left" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
                                 </state>
-                                <connections>
-                                    <segue destination="7ht-q1-tOj" kind="show" id="Fs8-jO-ZD7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-QI-7ks">
                                 <rect key="frame" x="130" y="726" width="130" height="30"/>
@@ -337,7 +334,7 @@
             <objects>
                 <viewController id="GhB-pG-pZ9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3hz-Th-gJQ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlN-id-Uo8">
@@ -417,7 +414,6 @@
                                 <state key="normal" title="Button" image="8-89924_download-new-emoji-icons-in-png-ios-10.png"/>
                                 <connections>
                                     <action selector="greenSmileButton:" destination="6FX-0T-rOK" eventType="touchUpInside" id="14r-aQ-T9G"/>
-                                    <segue destination="Nhm-tL-viW" kind="show" id="kFv-Qj-a2k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKO-dW-FV2">
@@ -426,7 +422,6 @@
                                 <state key="normal" title="Button" image="50-500914_neutral-emoji-png-transparent-background-neutral-emoji-png"/>
                                 <connections>
                                     <action selector="yellowSmileButton:" destination="6FX-0T-rOK" eventType="touchUpInside" id="yjg-w0-pIK"/>
-                                    <segue destination="tQu-s7-lhp" kind="show" id="dlM-yu-7Jw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XY-DS-U61">
@@ -435,7 +430,6 @@
                                 <state key="normal" title="Button" image="Image-1"/>
                                 <connections>
                                     <action selector="redSadButton:" destination="6FX-0T-rOK" eventType="touchUpInside" id="ETq-js-jNx"/>
-                                    <segue destination="GhB-pG-pZ9" kind="show" id="QZz-9C-hBD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -491,8 +485,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bPi-S9-bGs"/>
-        <segue reference="IKz-Vh-nVO"/>
+        <segue reference="rY2-Bh-K26"/>
+        <segue reference="Y3m-XT-KVE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2808A82B-9F2B-41BB-9FD2-8CCD404EAD49" width="1949" height="3464"/>

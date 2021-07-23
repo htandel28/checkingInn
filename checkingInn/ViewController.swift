@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     @IBAction func greenSmileButton(_ sender: Any) {
     }
-    
+
     @IBAction func yellowSmileButton(_ sender: Any) {
     }
     

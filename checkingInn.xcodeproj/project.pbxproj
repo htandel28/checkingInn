@@ -16,6 +16,7 @@
 		A8B2D4D426A768AA004D1F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B2D4D226A768AA004D1F91 /* LaunchScreen.storyboard */; };
 		A8B2D4DF26A768AA004D1F91 /* checkingInnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B2D4DE26A768AA004D1F91 /* checkingInnTests.swift */; };
 		A8B2D4EA26A768AA004D1F91 /* checkingInnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B2D4E926A768AA004D1F91 /* checkingInnUITests.swift */; };
+		A8B2D4F826AA3FBF004D1F91 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B2D4F726AA3FBF004D1F91 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A8B2D4E526A768AA004D1F91 /* checkingInnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checkingInnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B2D4E926A768AA004D1F91 /* checkingInnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkingInnUITests.swift; sourceTree = "<group>"; };
 		A8B2D4EB26A768AA004D1F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B2D4F726AA3FBF004D1F91 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				A8B2D4C626A768A9004D1F91 /* SceneDelegate.swift */,
 				A8B2D4C826A768A9004D1F91 /* ViewController.swift */,
 				A8B2D4CA26A768A9004D1F91 /* Main.storyboard */,
+				A8B2D4F726AA3FBF004D1F91 /* UserViewController.swift */,
 				A8B2D4D026A768AA004D1F91 /* Assets.xcassets */,
 				A8B2D4D226A768AA004D1F91 /* LaunchScreen.storyboard */,
 				A8B2D4D526A768AA004D1F91 /* Info.plist */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B2D4C926A768A9004D1F91 /* ViewController.swift in Sources */,
+				A8B2D4F826AA3FBF004D1F91 /* UserViewController.swift in Sources */,
 				A8B2D4CF26A768A9004D1F91 /* checkingInn.xcdatamodeld in Sources */,
 				A8B2D4C526A768A9004D1F91 /* AppDelegate.swift in Sources */,
 				A8B2D4C726A768A9004D1F91 /* SceneDelegate.swift in Sources */,
