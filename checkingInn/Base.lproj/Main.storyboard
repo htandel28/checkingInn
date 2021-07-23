@@ -59,7 +59,7 @@
                                 <state key="normal" title="To-do List" image="Image-2"/>
                                 <connections>
                                     <action selector="toDoListButton:" destination="qM6-7L-zSl" eventType="touchUpInside" id="rUH-eG-kz9"/>
-                                    <segue destination="6op-qg-CeU" kind="show" id="Dok-hc-2ee"/>
+                                    <segue destination="egc-7q-Ijf" kind="show" id="n7I-pZ-YeA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMq-M2-lUv">
@@ -942,7 +942,7 @@ Short naps are also good if you are often tired!</string>
                                         <string key="content">Thank you for checking in! No matter how you feel right now, make sure you prioritize your mental health and reach out if you are struggling. There is a list of resources available under the “Resources” tab if needed. Remember that you are loved. </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="28" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="28"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1260,54 +1260,167 @@ Short naps are also good if you are often tired!</string>
             </objects>
             <point key="canvasLocation" x="1493.8461538461538" y="-201.18483412322274"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="U4p-Xw-kEq">
+        <!--To-Do list-->
+        <scene sceneID="MDv-Jj-SdJ">
             <objects>
-                <viewController id="6op-qg-CeU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h5y-Zp-1MX">
+                <tableViewController id="egc-7q-Ijf" customClass="ToDoTableViewController" customModule="checkingInn" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EN1-64-t2b">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="sRy-4t-TdF">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sRy-4t-TdF" id="P04-fr-Sny">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="egc-7q-Ijf" id="fIH-vp-hDc"/>
+                            <outlet property="delegate" destination="egc-7q-Ijf" id="5P7-K3-pSn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="To-Do list" id="AVR-Ou-ve2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="4Zo-11-bw4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lHh-M4-sOb">
+                            <connections>
+                                <segue destination="3aX-B3-dUQ" kind="show" id="6HP-Kf-oJD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="SK0-m3-4Lp" kind="show" id="86P-Gi-Dfx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f40-hB-4nf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3014" y="144"/>
+        </scene>
+        <!--Complete To Do View Controller-->
+        <scene sceneID="qFd-fx-Rjz">
+            <objects>
+                <viewController id="SK0-m3-4Lp" customClass="CompleteToDoViewController" customModule="checkingInn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQz-WQ-dEK">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-bY-tBv">
-                                <rect key="frame" x="75" y="-26" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To-Do Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8g-J6-OKW">
+                                <rect key="frame" x="103" y="150" width="143" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aul-kN-Pju">
-                                <rect key="frame" x="23" y="27" width="31" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Back" image="arrowshape.turn.up.left" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BK7-vN-Kd3" kind="show" id="WXQ-sn-Y8g"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOr-O8-8QH">
-                                <rect key="frame" x="165" y="130" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6Q-o9-dqD">
+                                <rect key="frame" x="120" y="211" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mark Complete!">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="completeTapped:" destination="SK0-m3-4Lp" eventType="touchUpInside" id="GwT-gY-Lri"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="97N-kc-4Hk"/>
-                        <color key="backgroundColor" red="0.91372549530000002" green="0.87058818339999999" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="1KV-Mm-V8g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lMR-nF-Bk5"/>
+                    <navigationItem key="navigationItem" id="Z6O-rD-Pnt"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="z8g-J6-OKW" id="oyj-zN-3AM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="esz-b4-U78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qk2-J9-6xK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="113.74407582938387"/>
+            <point key="canvasLocation" x="3014" y="828"/>
+        </scene>
+        <!--Add To Do View Controller-->
+        <scene sceneID="Gaq-ek-quZ">
+            <objects>
+                <viewController id="3aX-B3-dUQ" customClass="AddToDoViewController" customModule="checkingInn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dbE-IC-gpv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you have to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-3k-oPU">
+                                <rect key="frame" x="34" y="139" width="298" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LC6-c4-tGZ">
+                                <rect key="frame" x="66" y="194" width="220" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is it important?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-K1-2mN">
+                                <rect key="frame" x="100" y="241" width="153" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DhO-yL-qlf">
+                                <rect key="frame" x="143" y="277" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgJ-I7-tkD">
+                                <rect key="frame" x="132" y="316" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add to list">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTapped:" destination="3aX-B3-dUQ" eventType="touchUpInside" id="66a-f0-UUq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y6J-PQ-dCu"/>
+                        <color key="backgroundColor" red="0.78791649789999996" green="0.80752912509999997" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="moM-sG-8RW"/>
+                    <connections>
+                        <outlet property="importantSwitch" destination="DhO-yL-qlf" id="R5g-vl-TSn"/>
+                        <outlet property="titletextField" destination="LC6-c4-tGZ" id="qvI-II-pSZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGQ-I5-WvA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3664.6153846153843" y="143.60189573459715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DQT-DM-uIU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lEE-jd-DgD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3aN-F2-zVQ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="egc-7q-Ijf" kind="relationship" relationship="rootViewController" id="6Av-L5-F5C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LwQ-HK-K7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2347.6923076923076" y="143.60189573459715"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LrA-rd-f1x"/>
+        <segue reference="n7I-pZ-YeA"/>
+        <segue reference="bPi-S9-bGs"/>
         <segue reference="rPX-u6-Isr"/>
         <segue reference="LaR-7U-ewh"/>
         <segue reference="bcd-AA-R3i"/>
-        <segue reference="kyO-c5-QgE"/>
+        <segue reference="IKz-Vh-nVO"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.78791649789999996" green="0.80752912509999997" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="2808A82B-9F2B-41BB-9FD2-8CCD404EAD49" width="1949" height="3464"/>
         <image name="50-500914_neutral-emoji-png-transparent-background-neutral-emoji-png" width="553" height="595"/>
@@ -1323,6 +1436,9 @@ Short naps are also good if you are often tired!</string>
         <image name="sadface" width="732" height="1024"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
